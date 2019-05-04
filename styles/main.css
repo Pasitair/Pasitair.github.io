@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css?family=Cabin:400,500,700|Montserrat:400,500,700');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Cabin', sans-serif;
+    background-color: #fff;
+}
+
+.header_area {
+    top: 0;
+    padding: 0;
+    left: 0;
+    position: sticky;
+    width: 100%;
+    z-index: 99;
+}
+.brand
+{
+    float:left;
+    display: inline-block;
+    font-size: 68px;    
+}
+.sign-up:hover
+{
+    float:right;
+    border: 2px solid violet;
+    border-radius: 20px 20px 20px 0px;
+transition-duration: 10ms;
+}
+.sign-up>a{
+ float:right;
+color: #fff;
+font-weight: 500;
+border: 2px solid #a883e9;
+height: 50px;
+min-width: 178px;
+line-height: 46px;
+text-align: center;
+border-radius: 24px 24px 24px 0px;
+}
+ul,li{
+    padding: 0;
+    margin: 0;
+}
+a,
+a:hover
+{
+    
+    text-decoration: none;
+color:white;
+}
+
+#nav,#nav>li
+{
+    display: inline-block;
+    padding:10px;
+
+}
+.navbar-collapse
+{
+    display: block;
+    width:100%;
+    background-color: blueviolet;
+    font-size:25px;
+}
+
+.line-shape-white,
+.line-shape {
+    width: 80px;
+    height: 2px;
+    background-color: #fb397d;
+    margin-top: 15px;
+}
+
+.line-shape {
+    margin-left: calc(50% - 40px);
+}
+
+.section-heading>h2 {
+    font-weight: 300;
+    color: #5b32b4;
+    font-size: 48px;
+    margin: 0;
+    text-align: center;
+}
+
+.section-heading {
+    margin-bottom: 60px;
+}
+/*
+.wellcome_area {
+    background-image: url(../assets/welcome/welcome-bg.png);
+    height: 900px;
+    position: relative;
+    z-index: 1;
+    background-position: bottom center;
+    background-size: cover;
+}
+
+.wellcome_area:after {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    height: 2px;
+    background-color: #fff;
+    content: '';
+    bottom: 0;
+    z-index: 2;
+}
+
+.welcome-thumb {
+    width: 45%;
+    position: absolute;
+    bottom: -130px;
+    right: 85px;
+    z-index: 9;
+}
+
+.welcome-thumb img {
+    height: auto;
+    width: 100%;
+}
+
+.wellcome-heading>h2 {
+    font-size: 100px;
+    color: #ffffff;
+    font-weight: 700;
+    position: relative;
+    z-index: 3;
+}
+
+.get-start-area .email {
+    background: #9572e8;
+    height: 50px;
+    max-width: 260px;
+    border: none;
+    border-radius: 24px;
+    padding: 0px 15px;
+}
+.form-control::placeholder {
+    color: #cec1f4;
+    opacity: 1;
+}
+
+.get-start-area .email:focus {
+    border: none;
+    outline-offset: transparent !important;
+    border-radius: 30px;
+}
+
+.get-start-area .submit {
+    background-color: #fb397d;
+    color: #fff;
+    font-weight: 500;
+    display: inline-block;
+    border: none;
+    height: 50px;
+    min-width: 167px;
+    line-height: 46px;
+    text-align: center;
+    border-radius: 24px 24px 24px 0px;
+    margin-left: 10px;
+}
+
+.get-start-area .submit:hover {
+    background: #6f52e5;
+    color: #fff;
+    -webkit-transition-duration: 500ms;
+    -o-transition-duration: 500ms;
+    transition-duration: 500ms;
+}
+
+.wellcome-heading>p {
+    color: #fff;
+}
+
+.wellcome-heading>h3 {
+    font-size: 332px;
+    position: absolute;
+    top: -134px;
+    font-weight: 900;
+    left: -12px;
+    z-index: -1;
+    color: #fff;
+    opacity: .1;
+}
+
+.wellcome-heading {
+    margin-bottom: 100px;
+}
+*/
+ .special-area{
+     width:100%;
+     display: block;
+ }
+.single-special>h4 {
+    font-size: 22px;
+    color: #5b32b4;
+}
+
+.single-icon {
+    margin-bottom: 25px;
+}
+
+.single-special>h4 {
+    font-size: 22px;
+    color: #5b32b4;
+    margin-bottom: 15px;
+}
+
+.single-special {
+    border: 1px solid #eff2f6;
+    padding: 40px;
+    border-radius: 40px 40px 40px 0px;
+    transition-duration: 800ms;
+    margin-bottom: 30px;
+    display: inline-block;
+}
+
+.special_description_content>h2 {
+    color: #5b32b4;
+    font-size: 48px;
+    margin-bottom: 30px;
+}
+
+.single-special:hover {
+    box-shadow: 0 10px 90px rgba(0, 0, 0, 0.08);
+}
+
+.single-special p {
+    margin-bottom: 0;
+}
+
+
+
+
+
+
+
+l
+.special-area
+{
+    display: block;
+    width:100%;
+}
+.single-special
+{
+    display: inline-block;
+    width:30%;
+}
