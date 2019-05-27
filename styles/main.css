@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Cabin:400,500,700|Montserrat:400,500,700');
 @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css');
 @import '../styles/ionicons.min.css';
+@import '../styles/magnific-popup.css';
+@import '../styles/themify-icons.css';
 @import 'media.css';
 
 * {
@@ -31,7 +33,18 @@ p {
     width: 100%;
     z-index: 99;
 }
-
+i{
+    font-size: 30px;
+    color:#a883e9;
+}
+i.ion-ios-star
+{
+    color:yellow;
+}
+i.fa-play
+{
+color:white;
+}
 .brand {
     display: inline-block;
     font-size: 68px;
@@ -39,7 +52,7 @@ p {
     margin: 20px;
 }
 
-.sign-up-button {
+#ca-navbar>.sign-up-button {
     display: inline-block;
     border: 2px solid #a883e9;
     border-radius: 20px 20px 20px 0px;
@@ -419,7 +432,7 @@ border-radius: 20px 20px 20px 0px;
 .cool_facts_area {
     position: relative;
     z-index: auto;
-    display: block;
+    display: block;     
     width: 100%;
     background: #a865e1;
     background: linear-gradient(to left, #7873ed, #a865e1);
@@ -560,19 +573,80 @@ footer {
 .copyright-text>p>a {
     color: blue;
 }
+.app-download-area {
+    display: block;
+    margin-top: 50px;
+}
 
+.app-download-btn a {
+    border: 1px solid #ddd;
+    display: inline-block;
+    align-items: center;
+    padding: 15px 30px;
+    border-radius: 30px 30px 30px 0;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    justify-content: center;
+}
+
+.app-download-btn.active a,
+.app-download-btn a:hover {
+    border-color: transparent;
+    background-color: #fb397d;
+    transition-duration: 500ms;
+
+}
+
+.app-download-btn a i {
+    color: #47425d;
+    font-size: 24px;
+    margin-right: 15px;
+    -webkit-transition-duration: 500ms;
+    -o-transition-duration: 500ms;
+    transition-duration: 500ms;
+}
+
+.app-download-btn a p {
+    font-size: 16px;
+    line-height: 1;
+    transition-duration: 500ms;
+}
+
+.app-download-btn a p span {
+    font-size: 12px;
+    display: block;
+}
+
+.app-download-btn:first-child {
+    margin-right: 20px;
+}
+
+.app-download-btn a:hover i,
+.app-download-btn.active a i,
+.app-download-btn.active a p,
+.app-download-btn a:hover p {
+    color: #fff;
+}
 
 
 /*price*/
 .pricing-plane-area {
     background: #f5f9fc;
     display: block;
+}
 
+.container-price {
+    margin:0 25% 0 25%;
+    display:block;
+    width:100%;
 }
 
 .single-price-plan  {
-    display: inline;
-    justify-content: center;
+    background: #ffffff;
+    border: 1px solid #ebebeb;
+    border-radius: 30px 30px 30px 0;
+    margin-bottom: 30px; 
+    display: inline-block;
+    margin-left: 24px;
 }
 
 .single-price-plan .package-plan {
@@ -584,8 +658,6 @@ footer {
     color: #5b32b4;
     font-size: 18px;
 }
-
-
 .single-price-plan .package-plan .ca-price h4 {
     color: #fb397d;
     font-size: 48px;
@@ -607,7 +679,7 @@ footer {
     color: #ffffff;
     font-size: 16px;
     font-weight: 500;
-    -webkit-transition-duration: 500ms;
+    display: block;
     transition-duration: 500ms;
 }
 
@@ -635,91 +707,57 @@ footer {
     color: #fff;
 }
 
-.container-price {
-    width: 25%;
-}
-
 /*team*/
-.container-team {
-    display: block;
-}
 
-.member-image {
-    margin-bottom: 30px;
-    border-radius: 30px 30px 30px 0;
-    position: relative;
-    z-index: 1;
-}
-
-.member-image img {
-    border-radius: 30px 30px 30px 0;
-}
-
-.member-text>h4 {
-    font-size: 22px;
-    color: #5b32b4;
-}
-
-.member-text>p {
-    color: #b5aec4;
-    margin-bottom: 0;
-}
-
-.team-hover-effects {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(105, 75, 228, 0.8);
-    border-radius: 30px 30px 30px 0;
-    opacity: 0;
-    transition: all 500ms;
-}
-
-.single-team-member:hover .team-hover-effects {
-    opacity: 1;
-}
-
-.team-social-icon {
-    position: absolute;
-    z-index: 5;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.team-social-icon>a {
-    font-size: 14px;
-    color: #fff;
-    background: #9a81d7;
-    height: 40px;
-    width: 40px;
-    line-height: 40px;
-    text-align: center;
-    border-radius: 10px 10px 10px 0;
-    display: block;
-    margin: 2.5px;
-}
-
-.single-team-member {
-    margin-bottom: 50px;
-}
 .app_screenshots_slides
 {
 display: block;
+
 }
 .single-shot
 {
     display: inline;
+    
 }
 .single-shot>img
 {
-    width:18%;
+    width:250px;
     margin-left: 16px;  
     align-items: center;     
+}
+.container-feedback
+{
+    display: block;
+    width:100%;
+}
+.client-feedback-text
+{
+display: inline-block;
+width:20%;
+margin:30px;
+text-align: center;
+}
+.client-thumbnail>img
+{
+    border: black 2px solid;
+    border-radius:100%; 
+}
+.container-team
+{
+    display: block; 
+    width:50;
+    margin:0 25% 0 25%;
+
+}
+.single-team-member
+{
+    display: inline-block;
+    width:23%;
+
+
+}
+.member-image>img
+{
+width:100%;
+}
 }
