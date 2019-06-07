@@ -3,7 +3,7 @@
 @import '../styles/ionicons.min.css';
 @import '../styles/magnific-popup.css';
 @import '../styles/themify-icons.css';
-@import 'media.css';
+@import '../styles/media.css';
 
 * {
     margin: 0;
@@ -29,7 +29,6 @@ p {
     top: 0;
     padding: 0;
     left: 0;
-    position: sticky;
     width: 100%;
     z-index: 99;
 }
@@ -58,6 +57,7 @@ color:white;
     border-radius: 20px 20px 20px 0px;
 
 }
+
 
 .sign-up-button:hover {
     border: 2px solid violet;
@@ -105,14 +105,8 @@ a:hover {
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
+    background-image: url(../assets/welcome/welcome-bg.png);}
 
-}
-
-.sing-up-button {
-    display: inline-block;
-    border: 2px solid #a883e9;
-    border-radius: 20px 20px 20px 0px;
-}
 
 #nav,
 #nav>li {
@@ -123,9 +117,9 @@ a:hover {
 }
 
 #ca-navbar {
-    display: block;
+    display: flex;
     width: 100%;
-    background-color: blueviolet;
+    background-color:inherit;
     font-size: 20px;
     height: 100px;
 }
@@ -161,6 +155,7 @@ a:hover {
     z-index: 1;
     background-position: bottom center;
     background-size: cover;
+    padding-top: 120px;
 }
 
 .wellcome_area:after {
@@ -183,8 +178,9 @@ a:hover {
 }
 
 .welcome-thumb>img {
-    height: auto;
-    width: 100%;
+    height: 100%;
+width: 100%;
+margin: 0 0 300px 0;
 
 }
 
@@ -212,8 +208,26 @@ a:hover {
 
 .get-start-area .email:focus {
     border: none;
-    outline-offset: transparent !important;
     border-radius: 30px;
+}
+.get-started-button
+{
+    background-color: darkorchid;
+    color: #fff;
+    font-weight: 500;
+    display: inline-block;
+    border: none;
+    height: 50px;
+    min-width: 167px;
+    line-height: 46px;
+    text-align: center;
+    border-radius: 24px 24px 24px 0px;
+    margin-left: 10px;
+}
+.get-started-button:hover
+{
+    background-color: #fb397d;
+    transition-duration: 500ms;
 }
 
 .get-start-area .submit {
@@ -329,21 +343,24 @@ a:hover {
 
 }
 
-.app-download-area {
+.app-download-area
+ {
     display: block;
 }
 
-.app-download-btn>a {
+.app-download-btn>a 
+{
     display: block;
     width: 20%;
     border: 2px solid gray;
 border-radius: 20px 20px 20px 0px;
 }
 
-.app-download-btn>a:hover {
+.app-download-btn>a:hover
+ {
     display: block;
     width: 20%;
-    box-shadow: #a883e9 23px;
+    box-shadow: #a883e9 1px 1px;
     text-align: left;
 }
 
@@ -559,6 +576,7 @@ footer {
     color: #ffffff;
     font-weight: 500;
     border-radius: 22px 25px 22px 0;
+    border: none;
 }
 
 .submit-button:hover {
@@ -635,9 +653,9 @@ footer {
 }
 
 .container-price {
-    margin:0 25% 0 25%;
-    display:block;
-    width:100%;
+    margin: 0 80px 0 80px;
+    display: block;
+    width: 100%;
 }
 
 .single-price-plan  {
@@ -646,11 +664,11 @@ footer {
     border-radius: 30px 30px 30px 0;
     margin-bottom: 30px; 
     display: inline-block;
-    margin-left: 24px;
+    margin-left: 130px;
 }
 
 .single-price-plan .package-plan {
-    padding: 40px 0;
+    padding: 0;
     border-radius: 30px 30px 0 0;
 }
 
@@ -739,25 +757,25 @@ text-align: center;
 }
 .client-thumbnail>img
 {
-    border: black 2px solid;
     border-radius:100%; 
+    width: 40%;
 }
 .container-team
 {
     display: block; 
-    width:50;
+    width:50%;
     margin:0 25% 0 25%;
 
 }
 .single-team-member
 {
-    display: inline-block;
-    width:23%;
+    display: flex;
+    width:25%;
+    
 
 
 }
 .member-image>img
 {
 width:100%;
-}
 }

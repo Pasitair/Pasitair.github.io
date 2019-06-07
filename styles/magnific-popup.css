@@ -8,7 +8,6 @@
     position: fixed;
     background: #0b0b0b;
     opacity: .8;
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)"
 }
 
 .mfp-wrap {
@@ -19,7 +18,6 @@
     z-index: 1043;
     position: fixed;
     outline: none !important;
-    -webkit-backface-visibility: hidden
 }
 
 .mfp-container {
@@ -154,7 +152,6 @@ button::-moz-focus-inner {
     text-decoration: none;
     text-align: center;
     opacity: .65;
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=65)";
     padding: 0 0 18px 10px;
     color: #FFF;
     font-style: normal;
@@ -165,7 +162,6 @@ button::-moz-focus-inner {
 .mfp-close:hover,
 .mfp-close:focus {
     opacity: 1;
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)"
 }
 
 .mfp-close:active {
@@ -198,7 +194,6 @@ button::-moz-focus-inner {
 .mfp-arrow {
     position: absolute;
     opacity: .65;
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=65)";
     margin: 0;
     top: 50%;
     margin-top: -55px;
@@ -215,7 +210,6 @@ button::-moz-focus-inner {
 .mfp-arrow:hover,
 .mfp-arrow:focus {
     opacity: 1;
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)"
 }
 
 .mfp-arrow:before,
@@ -242,7 +236,6 @@ button::-moz-focus-inner {
     border-top-width: 21px;
     border-bottom-width: 21px;
     opacity: .7;
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)"
 }
 
 .mfp-arrow-left {
