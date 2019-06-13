@@ -7,41 +7,62 @@
     display: none;
   }
 
+
   #menu-mobile {
     visibility: visible;
     overflow:;
+    position: relative;
+    cursor: pointer;
   }
 
   .navigation {
-    display: none;
-    padding: 0;
+    display: block;
+    position: fixed;
+    list-style: none;
+    padding: 10px;
     margin: 0;
-
+    box-sizing: border-box;
+    height: auto;
+    top: 0;
+    left: auto;
 
   }
 
   .navigation li {
     font-size: 15px;
     display: block;
-    width: 100%;
   }
+
+
 
   .navigation a {
     display: block;
-    padding: .5em;
     text-decoration: none;
   }
 
   .toggle-button {
+    height: 40px;
+    width: 40px;
     text-align: center;
     display: block;
     cursor: pointer;
     color: rgb(10, 10, 10);
     border: 1px solid black;
+    border-radius: 3px;
+    background-color: blueviolet;
+  }
+
+
+  .toggle-button > i {
+    font-size: 40px;
   }
 
   #menu-mobile:checked + nav .toggle-button {
-    color: #FFF7B2;
+    color: rgb(10, 10, 10);
+  }
+
+  #menu-mobile:checked + nav ul ~ .button {
+    display: block;
   }
 
   #menu-mobile:checked + nav .navigation {
