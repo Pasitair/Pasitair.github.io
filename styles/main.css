@@ -3,7 +3,6 @@
 @import '../styles/ionicons.min.css';
 @import '../styles/magnific-popup.css';
 @import '../styles/themify-icons.css';
-@import '../styles/media.css';
 
 * {
   margin: 0;
@@ -12,7 +11,7 @@
 
 body {
   font-family: 'Cabin', sans-serif;
-  background-color: #fff;
+  background-color: rgb(255, 255, 255);
   margin: 0;
   font-weight: 300;
   font-size: 16px;
@@ -25,6 +24,12 @@ p {
   margin-top: 0;
 }
 
+.form-inline {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
+
 .header_area {
   top: 0;
   padding: 0;
@@ -33,37 +38,58 @@ p {
   z-index: 99;
   position: sticky;
 }
-a, a:hover,a:active{
+
+a, a:hover, a:active {
   text-decoration: none;
-transition-duration: 500ms;
+  transition-duration: 500ms;
 }
-.single-icon>i {
+
+.single-icon > i {
   color: #fb397d;
   font-size: 36px
 }
-.flex  > i {
 
+.flex > i {
   color: #fb397d;
   font-size: 30px;
   display: inline-block;
   margin-right: 10px;
-
 }
 
+.sign-up-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #fff;
+  font-weight: 500;
+  display: inline-block;
+  border: 2px solid #a883e9;
+  height: 50px;
+  min-width: 178px;
+  line-height: 46px;
+  text-align: center;
+  border-radius: 24px 24px 24px 0px;
+}
 
-i.ion-ios-star {
+.sign-up-button:hover {
+  background-color: #fb397d;
+  transition-duration: 500ms;
+}
+
+.ion-ios-star {
   color: yellow;
 }
 
-i.fa-play {
+.fa-play {
   color: white;
 }
 
 .brand {
-  display: inline-block;
-  font-size: 68px;
-  font-weight: bold;
-  margin: 20px;
+  font-size: 72px;
+  font-weight: 700;
+  color: rgb(255, 255, 255);
+  line-height: 1;
+
 }
 
 ul,
@@ -72,8 +98,7 @@ li {
   margin: 0;
 }
 
-a,
-a:hover {
+a, a:hover {
   text-decoration: none;
   color: white;
 }
@@ -83,7 +108,18 @@ a:hover {
 
 }
 
+#menu-mobile {
+  display: none;
+}
+
+label {
+  display: none;
+}
+
+
 .menu_area {
+  position: relative;
+  z-index: 2;
   height: 100px;
   width: 100%;
 }
@@ -105,6 +141,7 @@ a:hover {
   height: 100px;
 
 }
+
 
 #ca-navbar {
   display: flex;
@@ -167,8 +204,8 @@ a:hover {
   z-index: 9;
 }
 
-.welcome-thumb > img {
-  height: 100%;
+.welcome-thumb img {
+  height: auto;
   width: 100%;
   margin: 0 0 300px 0;
 
@@ -181,16 +218,16 @@ a:hover {
   position: relative;
   z-index: 3;
 }
-.wellcome-heading > h3
-{
-font-size: 332px;
-position: absolute;
-top: -40px;
-font-weight: 900;
-left: 110px;
-z-index: -1;
-color: #fff;
-opacity: .1;
+
+.wellcome-heading > h3 {
+  font-size: 332px;
+  position: absolute;
+  top: -10px;
+  font-weight: 900;
+  left: 140px;
+  z-index: -1;
+  color: #fff;
+  opacity: .1;
 }
 
 .get-start-area .email {
@@ -212,23 +249,29 @@ opacity: .1;
   border-radius: 30px;
 }
 
-.get-started-button {
-  background-color: darkorchid;
-  color: #fff;
-  font-weight: 500;
+.get-started-button > a {
+  background: #ffffff;
+  height: 45px;
+  min-width: 155px;
   display: inline-block;
-  border: none;
-  height: 50px;
-  min-width: 167px;
-  line-height: 46px;
   text-align: center;
-  border-radius: 24px 24px 24px 0px;
-  margin-left: 10px;
+  line-height: 45px;
+  color: #fb397d;
+  font-weight: 500;
+  border-radius: 23px 23px 23px 0;
 }
 
-.get-started-button:hover {
-  background-color: #fb397d;
+.get-started-button > a:hover {
+  background: #5b32b4;
+  color: #fff;
+  -webkit-transition-duration: 500ms;
+  -o-transition-duration: 500ms;
   transition-duration: 500ms;
+}
+
+
+.get-started-button {
+  text-align: right;
 }
 
 .get-start-area .submit {
@@ -355,6 +398,7 @@ opacity: .1;
   box-shadow: #a883e9 1px 1px;
 }
 
+
 .app-download-btn > p {
   display: block;
   width: 20%;
@@ -402,6 +446,7 @@ opacity: .1;
 .video-area {
   position: relative;
   z-index: 1;
+  background-image: url(../assets/Background/video.jpg);
   background-position: center center;
   background-size: cover;
   border: 20px solid #fff;
@@ -549,7 +594,8 @@ footer {
   font-size: 18px;
   padding: 15px 15px;
   border-radius: 25px 25px 25px 0;
-  border: 1px solid #ced4da;}
+  border: 1px solid #ced4da;
+}
 
 #e-mail {
   font-size: 18px;
@@ -572,7 +618,7 @@ footer {
   color: #ffffff;
   font-weight: 500;
   border-radius: 22px 25px 22px 0;
-border: none;
+  border: none;
 }
 
 
@@ -818,98 +864,4 @@ border: none;
 
 .app-download-area {
   display: flex;
-}
-
-@media (max-width: 1024px) and (min-width: 300px) {
-  #nav {
-    display: none;
-  }
-  .brand{
-    font-size: 50px;
-  }
-  .welcome-thumb > img {
-    height: 100%;
-    width: 100%;
-    margin: 0 0 200px 0;
-  
-  }
-  
-
-  .section-heading ~ .flex {
-    display: block;
-  }
-
-  .container-description {
-    display: block;
-  }
-
-  .app-download-area {
-    display: block;
-  }
-
-  .app-download-btn > a {
-    width: 70%;
-    margin-right: 0;
-  }
-
-  .app-download-btn:first-child {
-    margin-right: 0;
-  }
-
-  .app-download-btn a:hover {
-    width: 70%;
-  }
-
-  .container-feature {
-    display: block;
-  }
-
-  .single-feature {
-    width: auto;
-  }
-
-  .container-c {
-    display: block;
-  }
-
-  .single-cool-fact {
-    width: auto;
-    text-align: center;
-  }
-
-  .single-shot {
-    display: block;
-  }
-
-  .app_screenshots_slides {
-    display: block;
-    text-align: center;
-  }
-
-  .container-feedback {
-    display: block;
-  }
-
-  .client-feedback-text {
-    width: auto;
-  }
-
-  .container-price {
-    display: block;
-    text-align: center;
-  }
-
-  .single-price-plan {
-    display: block;
-    width: auto;
-    margin: 0 auto;
-  }
-
-  .single-team-member {
-    width: auto;
-  }
-
-  .special_description_img img {
-    width: 100%;
-  }
 }

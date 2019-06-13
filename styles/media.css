@@ -1,0 +1,138 @@
+@media (max-width: 1024px) and (min-width: 300px) {
+  .button {
+    display: none;
+  }
+
+  #nav {
+    display: none;
+  }
+
+  #menu-mobile {
+    visibility: visible;
+    overflow:;
+  }
+
+  .navigation {
+    display: none;
+    padding: 0;
+    margin: 0;
+
+
+  }
+
+  .navigation li {
+    font-size: 15px;
+    display: block;
+    width: 100%;
+  }
+
+  .navigation a {
+    display: block;
+    padding: .5em;
+    text-decoration: none;
+  }
+
+  .toggle-button {
+    text-align: center;
+    display: block;
+    cursor: pointer;
+    color: rgb(10, 10, 10);
+    border: 1px solid black;
+  }
+
+  #menu-mobile:checked + nav .toggle-button {
+    color: #FFF7B2;
+  }
+
+  #menu-mobile:checked + nav .navigation {
+    display: block;
+  }
+
+  .brand {
+    font-size: 50px;
+  }
+
+  .welcome-thumb > img {
+    height: 100%;
+    width: 100%;
+    margin: 0 0 200px;
+  }
+
+  .section-heading ~ .flex {
+    display: block;
+  }
+
+  .container-description {
+    display: block;
+  }
+
+  .app-download-area {
+    display: block;
+  }
+
+  .app-download-btn > a {
+    width: 70%;
+    margin-right: 0;
+  }
+
+  .app-download-btn:first-child {
+    margin-right: 0;
+  }
+
+  .app-download-btn a:hover {
+    width: 70%;
+  }
+
+  .container-feature {
+    display: block;
+  }
+
+  .single-feature {
+    width: auto;
+  }
+
+  .container-c {
+    display: block;
+  }
+
+  .single-cool-fact {
+    width: auto;
+    text-align: center;
+  }
+
+  .single-shot {
+    display: block;
+  }
+
+  .app_screenshots_slides {
+    display: block;
+    text-align: center;
+  }
+
+  .container-feedback {
+    display: block;
+  }
+
+  .client-feedback-text {
+    width: auto;
+  }
+
+  .container-price {
+    display: block;
+    text-align: center;
+  }
+
+  .single-price-plan {
+    display: block;
+    width: auto;
+    margin: 0 auto;
+  }
+
+  .single-team-member {
+    width: auto;
+  }
+
+  .special_description_img img {
+    width: 100%;
+  }
+}

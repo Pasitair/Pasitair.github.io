@@ -7,34 +7,48 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="author" content="Чемкаев Павел">
   <meta name="description"
-    content="CA is a minimal and modern looking website template for Android and iOS mobile app showcase.">
+        content="CA is a minimal and modern looking website template for Android and iOS mobile app showcase.">
   <title>Colorlib App - App Landing Page</title>
   <link rel="stylesheet" type="text/css" href="styles/main.css">
-
-  <link rel="icon" href="assets/icon.ico">
+  <link rel="stylesheet" type="text/css" href="styles/media.css">
+  <link rel=" icon" href="assets/icon.ico">
 </head>
 
 <body>
   <header class="header_area">
     <div class="container-fluid">
       <div class="menu_area">
+        <input type="checkbox" id="menu-mobile">
         <nav class="navbar">
+          <label for="menu-mobile" class="toggle-button">
+            <i class="fa fa-bars"></i></label>
           <div id="ca-navbar">
             <a class="brand" href="#">Ca.</a>
-            <ul class="navbar-nav" id="nav">
+            <ul class="navigation" id="nav">
               <li class="nav-item"><a class="nav-link" href="#home">Home</a>
               </li>
               <li class="nav-item"><a class="nav-link" href="#about">About</a>
               </li>
-              <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
-              <li class="nav-item"><a class="nav-link" href="#screenshot">Screenshot</a></li>
-              <li class="nav-item"><a class="nav-link" href="#pricing">Pricing</a></li>
-              <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li>
+              <li class="nav-item"><a class="nav-link"
+                   href="#features">Features</a></li>
+              <li class="nav-item"><a class="nav-link"
+                   href="#screenshot">Screenshot</a></li>
+              <li class="nav-item"><a class="nav-link"
+                   href="#pricing">Pricing</a>
+              </li>
+              <li class="nav-item"><a class="nav-link"
+                   href="#testimonials">Testimonials</a></li>
               <li class="nav-item"><a class="nav-link" href="#team">Team</a>
               </li>
-              <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+              <li class="nav-item"><a class="nav-link"
+                   href="#contact">Contact</a>
+              </li>
             </ul>
-
+            <div class="button">
+              <div class="sign-up-button">
+                <a href="#">Sign Up Free</a>
+              </div>
+            </div>
           </div>
         </nav>
       </div>
@@ -51,7 +65,8 @@
       </div>
       <div class="get-start-area">
         <form action="#" method="post" class="form-inline">
-          <input type="email" class="form-control email" placeholder="name@company.com">
+          <input type="email" class="form-control email"
+                 placeholder="name@company.com">
           <input type="submit" class="submit" value="Get Started">
         </form>
       </div>
@@ -121,7 +136,8 @@
 
                 <a href="#">
                   <i class="fa fa-apple"></i>
-                  <p class="mb-0"><span>available on</span> Apple Store</p>
+                  <p class="p-download"><span>available on</span> Apple Store
+                  </p>
                 </a>
               </div>
             </div>
@@ -196,10 +212,11 @@
 
     <div class="video-section">
       <div class="container">
-        <div class="video-area" style="background-image:url(assets/Background/video.jpg);">
+        <div class="video-area">
           <div class="video-play-btn">
-            <a href="https://www.youtube.com/watch?v=f5BBJ4ySgpo" class="video_btn"><i class="fa fa-play"
-                aria-hidden="true"></i></a>
+            <a href="https://www.youtube.com/watch?v=f5BBJ4ySgpo"
+               class="video_btn"><i class="fa fa-play"
+                 aria-hidden="true"></i></a>
           </div>
         </div>
       </div>
@@ -580,26 +597,25 @@
           </div>
         </div>
 
-
-
         <div class="contact_from">
           <form action="#" method="post">
             <div class="contact_input_area">
 
               <div class="form-group">
-                <input type="text" class="form-control" name="name" id="name" placeholder="Your Name" required>
-
+                <input type="text" class="form-control" name="name" id="name"
+                       placeholder="Your Name" required>
 
                 <div class="email">
                   <div class="form-group">
-                    <input type="email" class="form-control" name="email" id="e-mail" placeholder="Your E-mail"
-                      required>
+                    <input type="email" class="form-control" name="email"
+                           id="e-mail" placeholder="Your E-mail" required>
                   </div>
                 </div>
 
                 <div class="message">
-                  <textarea name="message" class="form-control" id="message" cols="30" rows="4"
-                    placeholder="Your Message *" required></textarea>
+                  <textarea name="message" class="form-control" id="message"
+                            cols="30" rows="4" placeholder="Your Message *"
+                            required></textarea>
                 </div>
 
                 <div class="submit">
@@ -639,7 +655,8 @@
 
     <div class="copyright-text">
 
-      <p>Copyright ©2017 Ca. Designed by <a href="https://colorlib.com" target="_blank">Colorlib</a></p>
+      <p>Copyright ©2017 Ca. Designed by <a href="https://colorlib.com"
+           target="_blank">Colorlib</a></p>
     </div>
   </footer>
 </body>
