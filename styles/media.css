@@ -1,5 +1,5 @@
 @media (max-width: 1024px) and (min-width: 300px) {
-  .button {
+  .flex-btn {
     display: none;
   }
 
@@ -10,16 +10,15 @@
 
   #menu-mobile {
     visibility: visible;
-    overflow:;
-    position: relative;
+    position: absolute;
     cursor: pointer;
+
   }
 
-  .navigation {
-    display: block;
-    position: fixed;
+  .navbar-nav {
+    display: flex;
+    position: absolute;
     list-style: none;
-    padding: 10px;
     margin: 0;
     box-sizing: border-box;
     height: auto;
@@ -28,14 +27,12 @@
 
   }
 
-  .navigation li {
+  .navbar-nav li {
     font-size: 15px;
     display: block;
   }
 
-
-
-  .navigation a {
+  .navbar-nav a {
     display: block;
     text-decoration: none;
   }
@@ -46,10 +43,12 @@
     text-align: center;
     display: block;
     cursor: pointer;
-    color: rgb(10, 10, 10);
-    border: 1px solid black;
+    color: rgba(10, 10, 10, 0.8);
+    border: 1px solid rgba(10, 10, 10, 0.8);
     border-radius: 3px;
-    background-color: blueviolet;
+    top: 20px;
+    right: 20px;
+    position: absolute;
   }
 
 
@@ -58,15 +57,19 @@
   }
 
   #menu-mobile:checked + nav .toggle-button {
-    color: rgb(10, 10, 10);
+    color: rgba(10, 10, 10, 0.8);
+    border: 1px solid rgba(10, 10, 10, 0.8);
   }
 
-  #menu-mobile:checked + nav ul ~ .button {
-    display: block;
+  #menu-mobile:checked + nav ul ~ .flex-btn {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
   }
 
-  #menu-mobile:checked + nav .navigation {
-    display: block;
+  #menu-mobile:checked + nav .navbar-nav {
+    display: flex;
+    flex-direction: column;
   }
 
   .brand {

@@ -57,9 +57,11 @@ a, a:hover, a:active {
 }
 
 .sign-up-button {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+  display: block;
+  text-align: right;
+}
+
+.sign-up-button > a {
   color: #fff;
   font-weight: 500;
   display: inline-block;
@@ -71,9 +73,14 @@ a, a:hover, a:active {
   border-radius: 24px 24px 24px 0px;
 }
 
-.sign-up-button:hover {
+.sign-up-button > a:hover {
   background-color: #fb397d;
   transition-duration: 500ms;
+  border: 2px solid #fb397d;
+}
+
+.flex-btn {
+  margin-top: 20px;
 }
 
 .ion-ios-star {
@@ -127,8 +134,10 @@ label {
 .navbar {
   position: relative;
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
+  flex-wrap: nowrap;
+  flex-grow: 1;
+  flex: 0 0 200px;
+  . align-items: center;
   justify-content: space-between;
   background-image: url(../assets/welcome/welcome-bg.png);
 }
@@ -325,8 +334,10 @@ label {
   margin-bottom: 15px;
 }
 
-.single-icon {
+.single-icon > img {
   margin-bottom: 25px;
+  height: 50px;
+
 }
 
 .single-special {
@@ -437,6 +448,8 @@ label {
   font-size: 20px;
   margin-bottom: 30px;
 }
+
+
 
 .single-feature {
   width: 30%;
