@@ -137,7 +137,7 @@ label {
   flex-wrap: nowrap;
   flex-grow: 1;
   flex: 0 0 200px;
-  . align-items: center;
+   align-items: center;
   justify-content: space-between;
   background-image: url(../assets/welcome/welcome-bg.png);
 }
@@ -448,7 +448,6 @@ label {
   font-size: 20px;
   margin-bottom: 30px;
 }
-
 
 
 .single-feature {

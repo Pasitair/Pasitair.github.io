@@ -7,35 +7,36 @@
     display: none;
   }
 
+  #ca-navbar {
+    display: block;
+    padding: 20px;
+    border-radius: 3px;
+    text-align: left;
+  }
 
   #menu-mobile {
     visibility: visible;
     position: absolute;
     cursor: pointer;
-
   }
+
+  #nav > li {
+    padding: 0;
+  }
+
 
   .navbar-nav {
-    display: flex;
-    position: absolute;
-    list-style: none;
-    margin: 0;
-    box-sizing: border-box;
-    height: auto;
-    top: 0;
-    left: auto;
-
-  }
-
-  .navbar-nav li {
-    font-size: 15px;
+    font-size: 18px;
     display: block;
+    text-align: left;
   }
 
   .navbar-nav a {
     display: block;
     text-decoration: none;
   }
+
+
 
   .toggle-button {
     height: 40px;
@@ -61,15 +62,13 @@
     border: 1px solid rgba(10, 10, 10, 0.8);
   }
 
-  #menu-mobile:checked + nav ul ~ .flex-btn {
-    display: flex;
-    flex-direction: column;
-    text-align: right;
-  }
 
   #menu-mobile:checked + nav .navbar-nav {
     display: flex;
     flex-direction: column;
+    background-color: blueviolet;
+    height: 180px;
+    margin: auto;
   }
 
   .brand {
