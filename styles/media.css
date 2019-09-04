@@ -36,8 +36,6 @@
     text-decoration: none;
   }
 
-
-
   .toggle-button {
     height: 40px;
     width: 40px;
@@ -50,18 +48,16 @@
     top: 20px;
     right: 20px;
     position: absolute;
-  }
-
-
-  .toggle-button > i {
-    font-size: 40px;
+    background: url(../assets/icons/menu.png);
+    background-size: contain;
+    background-position: center;
   }
 
   #menu-mobile:checked + nav .toggle-button {
     color: rgba(10, 10, 10, 0.8);
     border: 1px solid rgba(10, 10, 10, 0.8);
-  }
 
+  }
 
   #menu-mobile:checked + nav .navbar-nav {
     display: flex;
