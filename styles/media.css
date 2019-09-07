@@ -1,4 +1,4 @@
-@media (max-width: 1024px) and (min-width: 300px) {
+@media (max-width: 1320px) and (min-width: 300px) {
   .flex-btn {
     display: none;
   }
@@ -51,6 +51,14 @@
     background: url(../assets/icons/menu.png);
     background-size: contain;
     background-position: center;
+  }
+
+  .welcome-thumb {
+    width: 45%;
+    position: absolute;
+    bottom: -160px;
+    right: 85px;
+    z-index: 9;
   }
 
   #menu-mobile:checked + nav .toggle-button {

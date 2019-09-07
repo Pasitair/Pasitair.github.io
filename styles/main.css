@@ -80,14 +80,6 @@ a, a:hover, a:active {
   margin-top: 20px;
 }
 
-.ion-ios-star {
-  color: yellow;
-}
-
-.fa-play {
-  color: white;
-}
-
 .brand {
   font-size: 72px;
   font-weight: 700;
@@ -120,7 +112,7 @@ a, a:hover {
 }
 
 .android, .ios {
-  width: 10%;
+  width: 15%;
   float: left;
   margin-right: 20px;
 }
@@ -140,8 +132,7 @@ label {
   position: relative;
   display: flex;
   flex-wrap: nowrap;
-  flex-grow: 1;
-  flex: 0 0 200px;
+  flex: 1 0 200px;
   align-items: center;
   justify-content: space-between;
   padding: 0 30px;
@@ -213,10 +204,14 @@ label {
   z-index: 2;
 }
 
+.form-group {
+  padding-bottom: 20px;
+}
+
 .welcome-thumb {
   width: 45%;
   position: absolute;
-  bottom: -130px;
+  bottom: -170px;
   right: 85px;
   z-index: 9;
 }
