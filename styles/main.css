@@ -1,9 +1,9 @@
+@charset "utf-8";
 @import url('https://fonts.googleapis.com/css?family=Cabin:400,500,700|Montserrat:400,500,700');
 
 * {
   margin: 0;
   padding: 0;
-
 }
 
 body {
@@ -12,6 +12,7 @@ body {
   margin: 0;
   font-weight: 300;
   font-size: 16px;
+  width: 100%;
 }
 
 p {
@@ -43,7 +44,7 @@ a, a:hover, a:active {
 
 .single-icon > i {
   color: #fb397d;
-  font-size: 36px
+  font-size: 36px;
 }
 
 .flex > i {
@@ -59,7 +60,7 @@ a, a:hover, a:active {
 }
 
 .sign-up-button > a {
-  color: #fff;
+  color: white;
   font-weight: 500;
   display: inline-block;
   border: 2px solid #a883e9;
@@ -67,7 +68,7 @@ a, a:hover, a:active {
   min-width: 178px;
   line-height: 46px;
   text-align: center;
-  border-radius: 24px 24px 24px 0px;
+  border-radius: 24px 24px 24px 0;
 }
 
 .sign-up-button > a:hover {
@@ -183,6 +184,7 @@ label {
   height: 700px;
   position: relative;
   z-index: 1;
+  width: auto;
   background-position: bottom center;
   background-size: cover;
   padding-top: 120px;
@@ -193,7 +195,7 @@ label {
   margin-bottom: 15px;
 }
 
-.wellcome_area:after {
+.wellcome_area::after {
   position: absolute;
   width: 100%;
   left: 0;
@@ -220,12 +222,11 @@ label {
   height: auto;
   width: 100%;
   margin: 0 0 300px 0;
-
 }
 
 .wellcome-heading > h2 {
   font-size: 100px;
-  color: #ffffff;
+  color: rgb(255, 255, 255);
   font-weight: 700;
   position: relative;
   z-index: 3;
@@ -239,7 +240,7 @@ label {
   left: 140px;
   z-index: -1;
   color: #fff;
-  opacity: .1;
+  opacity: 1;
 }
 
 .get-start-area .email {
@@ -248,19 +249,16 @@ label {
   max-width: 260px;
   border: none;
   border-radius: 24px;
-  padding: 0px 15px;
+  padding: 0 15px;
 }
 
 .form-control {
   font-size: 18px;
-  padding: 15px 15px;
   border-radius: 25px 25px 25px 0;
   border: 1px solid #ced4da;
   resize: none;
   margin-top: 10px;
 }
-
-
 
 .message {
   margin-bottom: 10px;
@@ -329,7 +327,7 @@ label {
   font-weight: 900;
   z-index: -1;
   color: #fff;
-  opacity: .1;
+  opacity: 0.1;
 }
 
 .wellcome-heading {
@@ -395,7 +393,6 @@ label {
 .special_description_area + img {
   display: inline;
   padding: 25px;
-
 }
 
 .app-download-area {
@@ -419,12 +416,10 @@ label {
   box-shadow: #a883e9 1px 1px;
 }
 
-
 .app-download-btn > p {
   display: block;
   width: 20%;
   text-align: right;
-
 }
 
 .awesome-feature-area {
@@ -537,10 +532,15 @@ label {
   margin-bottom: 0;
 }
 
+.main {
+  background: white;
+}
+
 footer {
-  z-index: -101;
+  z-index: -1;
   bottom: 0px;
 }
+
 
 .footer-text {
   margin-bottom: 15px;
@@ -584,9 +584,9 @@ footer {
 }
 
 .footer-menu ul li a {
-  border-right: 2px solid #726a84;
+  border-right: 1px solid #726a84;
   display: block;
-  padding: 0 7.5px;
+  padding: 0 12px;
   color: #726a84;
 }
 
@@ -606,7 +606,6 @@ footer {
 
 #message {
   font-size: 18px;
-  padding: 15px 15px;
   border-radius: 25px 25px 25px 0;
   border: 1px solid #ced4da;
 }
@@ -620,7 +619,6 @@ footer {
   border-radius: 22px 25px 22px 0;
   border: none;
 }
-
 
 .submit-button:hover {
   background-color: darkmagenta;
@@ -655,7 +653,6 @@ footer {
   border-color: transparent;
   background-color: #fb397d;
   transition-duration: 500ms;
-
 }
 
 .app-download-btn a i {
@@ -687,8 +684,6 @@ footer {
   color: #fff;
 }
 
-
-/*price*/
 .pricing-plane-area {
   background: #f5f9fc;
   display: block;
@@ -799,7 +794,6 @@ footer {
 
 .single-shot {
   display: inline;
-
 }
 
 .single-shot > img {
@@ -846,7 +840,6 @@ footer {
   border-radius: 100%;
   width: 40%;
   margin-top: 40px;
-
 }
 
 .container-team {

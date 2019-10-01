@@ -1,4 +1,7 @@
+@charset "utf-8";
+
 @media (max-width: 1320px) and (min-width: 300px) {
+
   .flex-btn {
     display: none;
   }
@@ -24,7 +27,6 @@
     padding: 0;
   }
 
-
   .navbar-nav {
     font-size: 18px;
     display: block;
@@ -48,7 +50,7 @@
     top: 20px;
     right: 20px;
     position: absolute;
-    background: url(../assets/icons/menu.png);
+    background: url("../assets/icons/menu.png");
     background-size: contain;
     background-position: center;
   }
@@ -91,6 +93,14 @@
 
   .container-description {
     display: block;
+  }
+
+  .wellcome-heading > h3 {
+    font-size: 280px;
+  }
+
+  .wellcome-heading > h2 {
+    font-size: 80px;
   }
 
   .app-download-area {
@@ -161,5 +171,9 @@
 
   .special_description_img img {
     width: 100%;
+  }
+
+  .footer {
+    width: auto;
   }
 }
