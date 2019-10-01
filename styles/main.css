@@ -137,7 +137,7 @@ label {
   align-items: center;
   justify-content: space-between;
   padding: 0 30px;
-  background-image: url(../assets/welcome/welcome-bg.png);
+  background-image: url(../assets/welcome-bg.png);
 }
 
 #nav,
@@ -180,7 +180,7 @@ label {
 }
 
 .wellcome_area {
-  background-image: url(../assets/welcome/welcome-bg.png);
+  background-image: url(../assets/welcome-bg.png);
   height: 700px;
   position: relative;
   z-index: 1;
@@ -462,7 +462,7 @@ label {
 .video-area {
   position: relative;
   z-index: 1;
-  background-image: url(../assets/Background/video.jpg);
+  background-image: url(../assets/video.jpg);
   background-position: center center;
   background-size: cover;
   border: 20px solid #fff;
